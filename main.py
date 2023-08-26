@@ -44,5 +44,3 @@ st.caption("_This is an anonymous way for leaders to understand "
            "how you are experiencing work and to support our "
            "school's continuous improvement plan._")
 
-# st.dataframe(pandas.read_csv("notes.csv", names=["Title", "Vibe",
-#                                                  "Note"]), height=300)

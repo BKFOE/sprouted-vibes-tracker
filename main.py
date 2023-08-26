@@ -25,16 +25,16 @@ vibe = st.radio("Select one", [":tired_face:", ":grimacing:",
 if vibe:
     st.write(f'You selected {vibe}!')
     raw_message = st.text_area("Additional comments", max_chars=140)
-#     message = f"""\
-# Subject: New vibes submission
-#
-# From: {user_role}
-# Vibe selected: {vibe}
-# Additional comments: {raw_message}
-# """
+    message = f"""\
+Subject: New vibes submission
+
+From: {user_role}
+Vibe selected: {vibe}
+Additional comments: {raw_message}
+"""
     button = st.button("Submit")
     if button:
-        # email.send_email(message)
+        email.send_email(message)
         st.success("Your vibe was submitted successfully!")
         dc.data_collection(user_role, vibe, raw_message)
 else:

@@ -13,7 +13,7 @@ df = pandas.read_csv("roles.csv")
 titles = df["title"]
 
 # Ask user to select their role
-user_role = st.selectbox("What is your title?", titles)
+user_role = st.selectbox("What is your role?", titles)
 
 # Ask user to submit their vibe for the day, send the email, and write it to
 # the csv file

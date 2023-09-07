@@ -6,12 +6,14 @@ import streamlit as st
 def send_email(message):
     host = "smtp.gmail.com"
     port = 465
-    st.write("DB username:", st.secrets["db_username"])
-    st.write("DB password:", st.secrets["db_password"])
-# os.environ["db_username"] == st.secrets["db_username"]
-# os.environ["db_password"] == st.secrets["db_password"]
-    username = "tirrell@usprouted.com"
-    password = os.getenv("PASSWORD")
+    # st.write("DB username:", st.secrets["db_username"])
+    # st.write("DB password:", st.secrets["db_password"])
+    # os.environ["db_username"] == st.secrets["db_username"]
+    # os.environ["db_password"] == st.secrets["db_password"]
+    username = "db_username"
+    password = "db_password"
+#     username = "tirrell@usprouted.com"
+#     password = os.getenv("PASSWORD")
     receiver = "tirrell@usprouted.com"
     context = ssl.create_default_context()
     try:

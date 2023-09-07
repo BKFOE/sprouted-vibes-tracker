@@ -8,7 +8,6 @@ def send_email(message):
     port = 465
     st.write(os.environ["db_username"] == st.secrets["db_username"],
              os.environ["db_password"] == st.secrets["db_password"])
-
     # st.write("DB username:", st.secrets["db_username"])
     # st.write("DB password:", st.secrets["db_password"])
     username = "tirrell@usprouted.com"

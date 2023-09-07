@@ -8,7 +8,7 @@ def send_email(message):
     port = 465
     username = st.secrets["db_username"]
     password = st.secrets["db_password"]
-    receiver = "tirrell@usprouted.com"
+    receiver = st.secrets["db_username"]
     context = ssl.create_default_context()
     try:
         with smtplib.SMTP_SSL(host, port, context=context) as server:

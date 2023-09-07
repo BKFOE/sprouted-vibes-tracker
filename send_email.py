@@ -6,8 +6,6 @@ import streamlit as st
 def send_email(message):
     host = "smtp.gmail.com"
     port = 465
-    st.write(os.environ["db_username"] == st.secrets["db_username"],
-             os.environ["db_password"] == st.secrets["db_password"])
     username = st.secrets["db_username"]
     password = st.secrets["db_password"]
     receiver = "tirrell@usprouted.com"
